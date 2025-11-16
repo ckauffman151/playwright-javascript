@@ -7,7 +7,7 @@ jobs:
   playwrighttests:
     runs-on: ubuntu-latest
     container:
-      image: docker pull mcr.microsoft.com/playwright:v1.56.1-noble
+      image: mcr.microsoft.com/playwright:v1.56.1-noble
       env:
         ADMIN_USERNAME: ${{ secrets.ADMIN_USERNAME }}
         ADMIN_PASSWORD: ${{ secrets.ADMIN_PASSWORD }}
