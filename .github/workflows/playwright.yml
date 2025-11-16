@@ -10,7 +10,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
       - name: Say hello
-      - run: echo "Hello, world!"
+        run: echo "Hello, world!"
       # - name: Setup Node.js
       #   uses: actions/setup-node@v2
       #   with:
