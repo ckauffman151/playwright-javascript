@@ -1,0 +1,24 @@
+name: Playwright Tests
+on:
+  push:
+    branches:
+      - main
+jobs:
+  playwrighttests:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      - name: Say hello
+      - run: echo "Hello, world!"
+      # - name: Setup Node.js
+      #   uses: actions/setup-node@v2
+      #   with:
+      #     node-version: '16'
+      # - name: Install dependencies
+      #   run: npm install
+      # - name: Run Playwright tests
+      #   run: npx playwright test --reporter=list
+      # - name: Upload Playwright Report
+      #   if: always()
+      #   run: npx playwright show-report
